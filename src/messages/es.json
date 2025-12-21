@@ -1,0 +1,124 @@
+{
+    "Navbar": {
+        "about": "Sobre Mí",
+        "projects": "Proyectos",
+        "blog": "Blog",
+        "skills": "Habilidades",
+        "journey": "Trayectoria",
+        "contact": "Contacto",
+        "resume": "Currículum"
+    },
+    "Hero": {
+        "badge": "Disponible para trabajar",
+        "title": "Creando Experiencias <br /> <span class=\"text-gradient\">Digitales</span> Premium",
+        "description": "Desarrollador Full Stack especializado en construir aplicaciones web hermosas y de alto rendimiento con Next.js y Payload CMS.",
+        "cta_work": "Ver mi Trabajo",
+        "cta_contact": "Contactar"
+    },
+    "Stats": {
+        "commits": "Commits Totales",
+        "repos": "Total Repos",
+        "stars": "Estrellas en Github",
+        "blog": "Blog Activo",
+        "posts": "{count} Artículos"
+    },
+    "About": {
+        "title": "Pasión por <span class=\"text-gradient\">Construir</span> una web mejor.",
+        "description": "Soy un desarrollador que ama combinar desafíos técnicos con diseño creativo. Mi objetivo es crear productos digitales que no solo sean funcionales, sino también un placer de usar.",
+        "stats": {
+            "experience": "Experiencia",
+            "projects": "Proyectos",
+            "coffee": "Café",
+            "ui": "Enfoque UI",
+            "exp_value": "4+ Años",
+            "projects_value": "30+",
+            "coffee_value": "Infinito",
+            "ui_value": "Pixel Perfect"
+        },
+        "philosophy": {
+            "title": "Mi Filosofía",
+            "p1": "Creo que el mejor software se construye en la intersección de una ingeniería sólida y una experiencia de usuario reflexiva. Cada línea de código que escribo es una oportunidad para resolver un problema de manera efectiva y elegante.",
+            "p2": "Cuando no estoy programando, suelo explorar nuevas tendencias de diseño, contribuir a proyectos de código abierto o aprender sobre los últimos avances en rendimiento y seguridad web.",
+            "location_label": "Ubicación",
+            "location_value": "Remoto / Global",
+            "based_label": "Basado En",
+            "based_value": "El Mundo Digital"
+        }
+    },
+    "Projects": {
+        "title": "Proyectos <span class=\"text-gradient\">Seleccionados</span>",
+        "viewCode": "Código",
+        "viewDemo": "Ver Demo",
+        "imageAlt": "Imagen del proyecto",
+        "fallbackTitle": "Cargando proyecto...",
+        "fallbackDesc": "Una vez que añadas proyectos en Payload CMS, aparecerán aquí con tus imágenes y etiquetas personalizadas."
+    },
+    "Skills": {
+        "title": "Habilidades y Tecnologías",
+        "categories": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "devops": "DevOps",
+            "tools": "Herramientas"
+        }
+    },
+    "Contact": {
+        "title": "Ponte en <span class=\"text-gradient\">Contacto</span>",
+        "labels": {
+            "name": "Nombre Completo",
+            "email": "Correo Electrónico",
+            "subject": "Asunto",
+            "message": "Tu Mensaje"
+        },
+        "placeholders": {
+            "name": "Juan Pérez",
+            "email": "juan@ejemplo.com",
+            "subject": "Consulta sobre proyecto",
+            "message": "Hola, me gustaría hablar sobre..."
+        },
+        "info": {
+            "email": "Enviarme un correo",
+            "location": "Ubicación",
+            "remote": "Disponible para remoto",
+            "call": "Llamarme"
+        },
+        "status": {
+            "pending": "Enviando...",
+            "send": "Enviar Mensaje",
+            "success": "¡Enviado con éxito!",
+            "error": "Algo salió mal. Por favor, inténtalo de nuevo más tarde."
+        },
+        "quote": "\"Siempre estoy abierto a nuevas oportunidades y proyectos interesantes. ¡Hagamos algo increíble juntos!\""
+    },
+    "Blog": {
+        "title": "Blog <span class=\"text-gradient\">Técnico</span>",
+        "description": "Artículos interesantes sobre desarrollo web moderno, arquitectura y patrones de diseño.",
+        "back": "Volver al blog",
+        "readMore": "Leer más"
+    },
+    "Journey": {
+        "title": "Mi <span class=\"text-gradient\">Trayectoria</span>",
+        "events": [
+            {
+                "title": "Ingeniero Full-Stack Senior",
+                "company": "TechNexus Solutions",
+                "description": "Liderando el desarrollo de arquitecturas en la nube escalables y mentorizando desarrolladores junior en mejores prácticas de React y Node.js."
+            },
+            {
+                "title": "Desarrollador Web",
+                "company": "Agencia Digital Creativa",
+                "description": "Construcción de sitios de marketing de alto rendimiento y plataformas de comercio electrónico complejas utilizando Next.js y soluciones de CMS sin cabeza."
+            },
+            {
+                "title": "Desarrollador UI Freelance",
+                "company": "Remoto",
+                "description": "Trabajo directo con startups para diseñar e implementar interfaces de usuario intuitivas e identidades de marca."
+            },
+            {
+                "title": "Grado en Ciencias de la Computación",
+                "company": "Universidad Tecnológica Global",
+                "description": "Especializado en Ingeniería de Software e Inteligencia Artificial. Graduado con honores."
+            }
+        ]
+    }
+}
