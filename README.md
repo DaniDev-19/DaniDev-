@@ -114,7 +114,7 @@ MIT
 
 ## 👨‍💻 Autor
 
-Tu Nombre - [Tu Email]
+Tu Nombre - DaniDev
 
 ---
 
