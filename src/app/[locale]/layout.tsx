@@ -15,11 +15,11 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "Professional Portfolio",
-    template: "%s | Professional Portfolio",
+    default: "DaniDev Portfolio",
+    template: "%s | Danidev Portfolio",
   },
   description:
-    "Create stunning digital experiences with a Full Stack Developer specializing in Next.js, React, and Node.js.",
+    "Create stunning digital experiences with a Full Stack Developer specializing in Next.js, React, Node.js, Python, Laravel and more technologies.",
   keywords: [
     "Portfolio",
     "Web Developer",
@@ -27,18 +27,19 @@ export const metadata: Metadata = {
     "React",
     "Full Stack",
     "Software Engineer",
+    "Backend Developer",
   ],
   openGraph: {
-    title: "Professional Portfolio",
+    title: "DaniDev Portfolio",
     description: "Create stunning digital experiences.",
     url: process.env.NEXT_PUBLIC_SERVER_URL,
-    siteName: "Professional Portfolio",
+    siteName: "DaniDev Portfolio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Professional Portfolio",
+    title: "DaniDev Portfolio",
     description: "Create stunning digital experiences.",
   },
 };

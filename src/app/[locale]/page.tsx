@@ -13,15 +13,15 @@ import { SocialDonation } from "@/components/sections/SocialDonation";
 const staticProjects = [
   {
     id: "1",
-    title: "E-Commerce Platform",
+    title: "SIVEA System",
     description:
-      "A modern e-commerce platform built with Next.js, featuring real-time inventory management and secure payment processing.",
+      "Sistema de Información para las operaciones de vuelo y estadisticas aeroportuarias en el aeropuerto Sst. Néstor Arias.",
     image:
       "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=2070&auto=format&fit=crop",
-    tags: [{ tag: "Next.js" }, { tag: "TypeScript" }, { tag: "Stripe" }],
+    tags: [{ tag: "Html" }, { tag: "Css" }, { tag: "JavaScript" }, {tag: "php"}, {tag: "Mysql"}],
     github: "https://github.com",
     demo: "https://demo.com",
-    docs: "/projects/ecommerce-platform-docs",
+    docs: "/projects/SIVEA",
   },
   {
     id: "2",
