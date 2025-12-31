@@ -84,7 +84,7 @@ export function Contact() {
                     {t("info.email")}
                   </h4>
                   <p className="text-zinc-600 dark:text-gray-400 font-medium text-lg">
-                    hello@johndoe.com
+                    BadDevprograming@gmail.com
                   </p>
                 </div>
               </div>
@@ -98,7 +98,7 @@ export function Contact() {
                     {t("info.location")}
                   </h4>
                   <p className="text-zinc-600 dark:text-gray-400 font-medium text-lg">
-                    Silicon Valley, CA ({t("info.remote")})
+                    Yaracuy - Venezuela  ({t("info.remote")})
                   </p>
                 </div>
               </div>
@@ -112,7 +112,7 @@ export function Contact() {
                     {t("info.call")}
                   </h4>
                   <p className="text-zinc-600 dark:text-gray-400 font-medium text-lg">
-                    +(123) 456-7890
+                    +(58) 412-1698315
                   </p>
                 </div>
               </div>

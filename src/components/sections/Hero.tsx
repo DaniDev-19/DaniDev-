@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
+import { img } from "@/components/image";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -79,8 +80,12 @@ export function Hero() {
                 <div className="absolute inset-0 animate-spin-slow rounded-full bg-gradient-to-tr from-blue-500/20 to-purple-500/20 blur-3xl" />
                 <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-full border-2 border-black/5 dark:border-white/10 bg-white/50 dark:bg-black/50 backdrop-blur-md shadow-2xl flex items-center justify-center group transform transition-transform hover:scale-105 duration-500">
                   <div className="relative z-10 text-center p-8">
-                    <div className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-                      DaniDev
+                    <div className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 overflow-hidden">
+                      <img
+                        src={img.DaniDev.src} 
+                        alt="DaniDev - Backend Developer and Software engineer - 25 years old"
+                        className="object-cover w-full h-full rounded-full overflow-hidden"
+                      />
                     </div>
                     <div className="text-sm md:text-base font-bold text-gray-500 uppercase tracking-[0.2em] mb-4">
                       Backend Developer

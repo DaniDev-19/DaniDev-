@@ -15,7 +15,7 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: <Github size={20} />,
-    url: "https://github.com",
+    url: "https://github.com/DaniDev-19",
     color: "hover:text-white",
   },
   {
@@ -27,19 +27,19 @@ const socialLinks = [
   {
     name: "Telegram",
     icon: <Send size={20} />,
-    url: "https://t.me/youruser",
+    url: "https://t.me/BadOmensDEV",
     color: "hover:text-blue-400",
   },
   {
     name: "Email",
     icon: <Mail size={20} />,
-    url: "mailto:your@email.com",
+    url: "mailto:baddevprograming@gmail.com",
     color: "hover:text-red-400",
   },
   {
     name: "Discord",
     icon: <span className="font-bold text-lg">Ds</span>,
-    url: "https://discord.gg",
+    url: "https://discordapp.com/users/894678781418147870",
     color: "hover:text-indigo-400",
   },
 ];
