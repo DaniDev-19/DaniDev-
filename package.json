@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "images": "node scripts/optimize-images.mjs",
-    "prepare": "husky"
+    "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then husky; fi"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
