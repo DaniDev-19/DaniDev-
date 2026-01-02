@@ -10,9 +10,9 @@
     },
     "Hero": {
         "badge": "Disponible para trabajar",
-        "title": "Creando Experiencias <br /> <span class=\"text-gradient\">Digitales</span> Premium",
-        "description": "Desarrollador Full Stack especializado en construir aplicaciones web hermosas y de alto rendimiento con Next.js y Payload CMS.",
-        "cta_work": "Ver mi Trabajo",
+        "title": "Creando Experiencias <br /> <span class=\"text-gradient\">Digitales</span>",
+        "description": "Soy un desarrollador que ama combinar desafíos técnicos con diseño creativo. Mi objetivo es crear productos digitales que no solo sean funcionales, sino también un placer de usar.",
+        "cta_work": "Ver mi CV",
         "cta_contact": "Contactar"
     },
     "Stats": {
@@ -24,21 +24,21 @@
     },
     "About": {
         "title": "Pasión por <span class=\"text-gradient\">Construir</span> una web mejor.",
-        "description": "Soy un desarrollador que ama combinar desafíos técnicos con diseño creativo. Mi objetivo es crear productos digitales que no solo sean funcionales, sino también un placer de usar.",
+        "description": "Soy un desarrollador web con experiencia en crear interfaces de usuario modernas y agradables de usar. Me aboco en resolver las necesidades de los usuarios implementando todos mis conocimientos y un poco de creatividad.",
         "stats": {
             "experience": "Experiencia",
             "projects": "Proyectos",
             "coffee": "Café",
-            "ui": "Enfoque UI",
-            "exp_value": "4+ Años",
-            "projects_value": "30+",
+            "ui": "perfección visual a perfección lógica",
+            "exp_value": "3+ Años",
+            "projects_value": "5+",
             "coffee_value": "Infinito",
             "ui_value": "Pixel Perfect"
         },
         "philosophy": {
             "title": "Mi Filosofía",
-            "p1": "Creo que el mejor software se construye en la intersección de una ingeniería sólida y una experiencia de usuario reflexiva. Cada línea de código que escribo es una oportunidad para resolver un problema de manera efectiva y elegante.",
-            "p2": "Cuando no estoy programando, suelo explorar nuevas tendencias de diseño, contribuir a proyectos de código abierto o aprender sobre los últimos avances en rendimiento y seguridad web.",
+            "p1": "Creo que el mejor software se construye en la intersección de una Arquitectura robusta y una experiencia de usuario reflexiva. Cada línea de código que escribo es una oportunidad para resolver un problema de manera efectiva y elegante. Disfruto construyendo los cimientos invisibles pero críticos que hacen que una aplicación sea escalable y confiable.",
+            "p2": "Cuando no estoy programando, suelo explorar nuevas arquitecturas de sistemas, contribuir a proyectos de código abierto o aprender sobre los últimos avances en rendimiento, seguridad y escalabilidad de datos.",
             "location_label": "Ubicación",
             "location_value": "Remoto / Global",
             "based_label": "Basado En",
@@ -58,6 +58,9 @@
         "categories": {
             "frontend": "Frontend",
             "backend": "Backend",
+            "frameworks": "Frameworks",
+            "database": "Bases de Datos",
+            "orm": "ORMs",
             "devops": "DevOps",
             "tools": "Herramientas"
         }
@@ -120,5 +123,17 @@
                 "description": "Especializado en Ingeniería de Software e Inteligencia Artificial. Graduado con honores."
             }
         ]
+    },
+    "Errors": {
+        "404": {
+            "title": "404",
+            "message": "Oops! La página que buscas no existe.",
+            "button": "Volver al Inicio"
+        },
+        "500": {
+            "title": "Algo salió mal",
+            "message": "Ha ocurrido un error inesperado en el servidor.",
+            "button": "Reintentar"
+        }
     }
 }

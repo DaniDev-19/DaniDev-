@@ -18,7 +18,13 @@ const staticProjects = [
       "Sistema de Información para las operaciones de vuelo y estadisticas aeroportuarias en el aeropuerto Sst. Néstor Arias.",
     image:
       "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=2070&auto=format&fit=crop",
-    tags: [{ tag: "Html" }, { tag: "Css" }, { tag: "JavaScript" }, {tag: "php"}, {tag: "Mysql"}],
+    tags: [
+      { tag: "Html" },
+      { tag: "Css" },
+      { tag: "JavaScript" },
+      { tag: "php" },
+      { tag: "Mysql" },
+    ],
     github: "https://github.com",
     demo: "https://demo.com",
     docs: "/projects/SIVEA",
@@ -48,17 +54,46 @@ const staticProjects = [
 ];
 
 // Static data for skills
-const staticSkills = [
-  { id: "1", name: "React", category: "frontend" as const, level: 90 },
-  { id: "2", name: "Next.js", category: "frontend" as const, level: 95 },
-  { id: "3", name: "TypeScript", category: "frontend" as const, level: 85 },
-  { id: "4", name: "Tailwind CSS", category: "frontend" as const, level: 90 },
-  { id: "5", name: "Node.js", category: "backend" as const, level: 80 },
-  { id: "6", name: "Python", category: "backend" as const, level: 75 },
-  { id: "7", name: "PostgreSQL", category: "backend" as const, level: 70 },
-  { id: "8", name: "MongoDB", category: "backend" as const, level: 75 },
-  { id: "9", name: "Docker", category: "devops" as const, level: 70 },
-  { id: "10", name: "Git", category: "tools" as const, level: 85 },
+const staticSkills: any[] = [
+  // Frontend
+  { id: "s1", name: "HTML", category: "frontend" },
+  { id: "s2", name: "CSS", category: "frontend" },
+  { id: "s3", name: "JavaScript", category: "frontend" },
+  // Backend
+  { id: "s4", name: "PHP", category: "backend" },
+  { id: "s5", name: "C++", category: "backend" },
+  { id: "s6", name: "Python", category: "backend" },
+  // Frameworks
+  { id: "s7", name: "React", category: "frameworks" },
+  { id: "s8", name: "NextJS", category: "frameworks" },
+  { id: "s9", name: "NodeJS", category: "frameworks" },
+  { id: "s10", name: "Laravel", category: "frameworks" },
+  { id: "s11", name: "FastAPI", category: "frameworks" },
+  { id: "s12", name: "Express", category: "frameworks" },
+  // Database
+  { id: "s13", name: "PostgreSQL", category: "database" },
+  { id: "s14", name: "MySQL", category: "database" },
+  { id: "s15", name: "MongoDB", category: "database" },
+  { id: "s16", name: "Redis", category: "database" },
+  { id: "s17", name: "SQLite", category: "database" },
+  // ORMs
+  { id: "s18", name: "Sequelize", category: "orm" },
+  { id: "s19", name: "Eloquent", category: "orm" },
+  { id: "s20", name: "SQLAlchemy", category: "orm" },
+  { id: "s21", name: "Prisma", category: "orm" },
+  // DevOps
+  { id: "s22", name: "Docker", category: "devops" },
+  { id: "s23", name: "CI/CD", category: "devops" },
+  { id: "s24", name: "Railway", category: "devops" },
+  { id: "s25", name: "Vercel", category: "devops" },
+  { id: "s26", name: "Render", category: "devops" },
+  { id: "s27", name: "Neon", category: "devops" },
+  // Tools
+  { id: "s28", name: "Git", category: "tools" },
+  { id: "s29", name: "Figma", category: "tools" },
+  { id: "s30", name: "Postman", category: "tools" },
+  { id: "s31", name: "ThunderClient", category: "tools" },
+  { id: "s32", name: "ESLint", category: "tools" },
 ];
 
 // Static data for blog posts

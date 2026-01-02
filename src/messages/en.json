@@ -58,6 +58,9 @@
         "categories": {
             "frontend": "Frontend",
             "backend": "Backend",
+            "frameworks": "Frameworks",
+            "database": "Databases",
+            "orm": "ORMs",
             "devops": "DevOps",
             "tools": "Tools"
         }
@@ -120,5 +123,17 @@
                 "description": "Specialized in Software Engineering and Artificial Intelligence. Graduated with honors."
             }
         ]
+    },
+    "Errors": {
+        "404": {
+            "title": "404",
+            "message": "Oops! The page you're looking for doesn't exist.",
+            "button": "Back to Home"
+        },
+        "500": {
+            "title": "Something went wrong",
+            "message": "An unexpected error occurred on the server.",
+            "button": "Try Again"
+        }
     }
 }

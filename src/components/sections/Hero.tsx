@@ -52,19 +52,27 @@ export function Hero() {
               transition={{ delay: 0.4, duration: 0.5 }}
               className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4"
             >
-              <Button
-                size="lg"
-                className="h-14 px-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold hover:scale-105 transition-transform shadow-lg shadow-blue-600/20"
+              <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                <Button
+                  size="lg"
+                  className="h-14 px-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold hover:scale-105 transition-transform shadow-lg shadow-blue-600/20"
+                >
+                  {t("cta_work")}
+                </Button>
+              </a>
+              <a
+                href="https://wa.me/584121698315?text=Hola,%20vengo%20de%20tu%20web%20y%20quisiera%20más%20información."
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {t("cta_work")}
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="h-14 px-8 border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-foreground font-medium"
-              >
-                {t("cta_contact")}
-              </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="w-full sm:w-auto h-14 px-8 border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-foreground font-medium"
+                >
+                  {t("cta_contact")}
+                </Button>
+              </a>
             </motion.div>
           </div>
 
@@ -78,26 +86,26 @@ export function Hero() {
             >
               <div className="absolute inset-0 animate-float">
                 <div className="absolute inset-0 animate-spin-slow rounded-full bg-gradient-to-tr from-blue-500/20 to-purple-500/20 blur-3xl" />
-                <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-full border-2 border-black/5 dark:border-white/10 bg-white/50 dark:bg-black/50 backdrop-blur-md shadow-2xl flex items-center justify-center group transform transition-transform hover:scale-105 duration-500">
-                  <div className="relative z-10 text-center p-8">
-                    <div className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 overflow-hidden">
-                      <img
-                        src={img.DaniDev.src} 
-                        alt="DaniDev - Backend Developer and Software engineer - 25 years old"
-                        className="object-cover w-full h-full rounded-full overflow-hidden"
-                      />
+                <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-full border-2 border-black/5 dark:border-white/10 bg-white/50 dark:bg-black/50 backdrop-blur-md shadow-2xl group transform transition-transform hover:scale-105 duration-500 p-4">
+                  <img
+                    src={img.DaniDev.src}
+                    alt="DaniDev - Backend Developer and Software engineer - 25 years old"
+                    className="w-full h-full object-cover rounded-full"
+                  />
+
+                  {/* Overlay for text to ensure readability if needed */}
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-8 pt-20 flex flex-col items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="text-xs md:text-base font-bold text-white uppercase tracking-[0.2em] mb-2">
+                      Software Engineer
                     </div>
-                    <div className="text-sm md:text-base font-bold text-gray-500 uppercase tracking-[0.2em] mb-4">
-                      Backend Developer
-                    </div>
-                    <div className="text-xs md:text-sm font-medium text-gray-400 italic bg-white/10 px-4 py-1 rounded-full inline-block backdrop-blur-sm border border-white/5">
-                      &quot;Enseñando también se aprende&quot;
+                    <div className="text-xs md:text-sm font-medium text-blue-200 italic">
+                      &quot;Aprender Creando, Crear Aprendiendo&quot;
                     </div>
                   </div>
 
                   {/* Circles decorations */}
-                  <div className="absolute inset-0 border border-blue-500/5 rounded-full animate-[spin_10s_linear_infinite]" />
-                  <div className="absolute inset-4 border border-purple-500/5 rounded-full animate-[spin_15s_linear_infinite_reverse]" />
+                  <div className="absolute inset-0 border border-blue-500/10 rounded-full animate-[spin_10s_linear_infinite]" />
+                  <div className="absolute inset-4 border border-purple-500/10 rounded-full animate-[spin_15s_linear_infinite_reverse]" />
                 </div>
               </div>
             </motion.div>

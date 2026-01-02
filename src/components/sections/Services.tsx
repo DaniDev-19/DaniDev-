@@ -20,30 +20,37 @@ export function Services() {
     {
       title: "Desarrollo Web Full Stack",
       description:
-        "Creación de aplicaciones web modernas, rápidas y escalables utilizando Next.js, React y Node.js.",
+        "Creación de aplicaciones web modernas, rápidas y escalables.",
       icon: <Code className="w-8 h-8 text-blue-400" />,
-      tags: ["Apps Web", "E-commerce", "Landing Pages"],
+      tags: ["Apps Web", "E-commerce", "Landing Pages", "App-movil"],
     },
     {
       title: "Manejo de Redes Sociales",
       description:
         "Estrategias de contenido y gestión de redes para potenciar tu marca personal o negocio.",
       icon: <Users className="w-8 h-8 text-purple-400" />,
-      tags: ["Instagram", "LinkedIn", "Content"],
+      tags: ["Instagram", "LinkedIn", "Content", "Marketing digital", "Blog"],
     },
     {
       title: "Servicio Técnico",
       description:
-        "Diagnóstico, reparación y optimización de equipos informáticos y software.",
+        "Diagnóstico, reparación y optimización de equipos informáticos, instalación de software y hardware.",
       icon: <Wrench className="w-8 h-8 text-green-400" />,
-      tags: ["Hardware", "Software", "Mantenimiento"],
+      tags: [
+        "Mantenimiento",
+        "Redes",
+        "Optimización",
+        "Seguridad",
+        "Monitorización",
+        "Instalación de Cámaras",
+      ],
     },
     {
       title: "Mentorías y Clases",
       description:
         "Aprende programación desde cero con clases personalizadas y material práctico.",
       icon: <GraduationCap className="w-8 h-8 text-pink-400" />,
-      tags: ["Clases 1:1", "Cursos", "Asesoría"],
+      tags: ["Clases 1:1", "Cursos", "Asesoría", "Proyectos"],
       highlight: true,
     },
   ];
