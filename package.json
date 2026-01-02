@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "images": "node scripts/optimize-images.mjs",
-    "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then husky; fi"
+    "prepare": "node -e \"if (!process.env.VERCEL) { try { require('child_process').execSync('husky', { stdio: 'inherit' }); } catch (e) {} }\""
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
