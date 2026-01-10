@@ -56,12 +56,13 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
   }
 }
 
 @layer components {
-
   /* High-end Glassmorphism */
   .glass-card {
     @apply bg-white/[0.03] dark:bg-white/[0.02] backdrop-blur-xl border border-black/5 dark:border-white/10 shadow-xl;
@@ -81,7 +82,7 @@
   }
 
   .neon-border::before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -2;
     left: -50%;
@@ -90,9 +91,17 @@
     height: 200%;
     background-color: transparent;
     background-repeat: no-repeat;
-    background-size: 50% 50%, 50% 50%;
-    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: linear-gradient(#00d2ff, #3a7bd5), linear-gradient(#3a7bd5, #00d2ff), linear-gradient(#00d2ff, #3a7bd5), linear-gradient(#3a7bd5, #00d2ff);
+    background-size:
+      50% 50%,
+      50% 50%;
+    background-position:
+      0 0,
+      100% 0,
+      100% 100%,
+      0 100%;
+    background-image:
+      linear-gradient(#00d2ff, #3a7bd5), linear-gradient(#3a7bd5, #00d2ff),
+      linear-gradient(#00d2ff, #3a7bd5), linear-gradient(#3a7bd5, #00d2ff);
     animation: rotate 4s linear infinite;
   }
 
@@ -101,7 +110,7 @@
   }
 
   .neon-border::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     left: 2px;
@@ -118,6 +127,35 @@
 
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-500 dark:to-pink-500;
+    padding-right: 0.05em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  /* Project Content Typography */
+  .project-content h2 {
+    @apply text-2xl md:text-3xl font-black text-zinc-900 dark:text-white mt-12 mb-6 tracking-tight;
+  }
+
+  .project-content p {
+    @apply text-base md:text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6 font-medium;
+  }
+
+  .project-content ul {
+    @apply space-y-4 mb-8 list-none;
+  }
+
+  .project-content li {
+    @apply flex gap-3 text-zinc-700 dark:text-zinc-300 text-base md:text-lg font-medium;
+  }
+
+  .project-content li::before {
+    content: "→";
+    @apply text-blue-500 font-bold flex-shrink-0;
+  }
+
+  .project-content span {
+    @apply block text-blue-600 dark:text-blue-400 font-bold text-sm uppercase tracking-widest mb-2;
   }
 }
 

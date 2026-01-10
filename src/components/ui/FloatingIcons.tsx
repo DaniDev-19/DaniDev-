@@ -24,7 +24,6 @@ const techIcons = [
   // "https://cdn.simpleicons.org/amazonaws/fff",
   "https://cdn.simpleicons.org/vercel/fff",
   "https://cdn.simpleicons.org/bun/fff",
-  "https://cdn.simpleicons.org/payloadcms/fff",
 ];
 
 export function FloatingIcons() {
@@ -81,7 +80,7 @@ export function FloatingIcons() {
           <motion.div
             className="w-full h-full flex items-center justify-center p-2 cursor-grab active:cursor-grabbing"
             animate={{
-              rotate: [0, 10, -10, 0], // Rotación suave independiente
+              rotate: [0, 10, -10, 0],
             }}
             transition={{
               duration: icon.duration * 0.8,

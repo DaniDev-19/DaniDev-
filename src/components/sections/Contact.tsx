@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useTransition } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,32 +12,46 @@ import {
   Phone,
   CheckCircle2,
   AlertCircle,
+  Loader2,
+  Quote,
 } from "lucide-react";
 import { sendEmail } from "@/actions/contact";
 import { useTranslations } from "next-intl";
 
 export function Contact() {
   const t = useTranslations("Contact");
-  const [isPending, setIsPending] = useState(false);
+  const [isPending, startTransition] = useTransition();
   const [status, setStatus] = useState<{
     success?: boolean;
     error?: string;
   } | null>(null);
 
-  async function handleSubmit(formData: FormData) {
-    setIsPending(true);
-    setStatus(null);
-    try {
-      const result = await sendEmail(formData);
-      setStatus(result);
-      if (result.success) {
-        (document.getElementById("contact-form") as HTMLFormElement).reset();
-      }
-    } catch (e) {
-      setStatus({ error: t("status.error") });
-    } finally {
-      setIsPending(false);
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => {
+        setStatus(null);
+      }, 4000);
+      return () => clearTimeout(timer);
     }
+  }, [status]);
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const formElement = event.currentTarget;
+
+    startTransition(async () => {
+      setStatus(null);
+      try {
+        const result = await sendEmail(formData);
+        setStatus(result);
+        if (result.success) {
+          formElement.reset();
+        }
+      } catch (e) {
+        setStatus({ error: t("status.error") });
+      }
+    });
   }
 
   return (
@@ -98,7 +112,7 @@ export function Contact() {
                     {t("info.location")}
                   </h4>
                   <p className="text-zinc-600 dark:text-gray-400 font-medium text-lg">
-                    Yaracuy - Venezuela  ({t("info.remote")})
+                    Yaracuy - Venezuela ({t("info.remote")})
                   </p>
                 </div>
               </div>
@@ -119,11 +133,16 @@ export function Contact() {
             </div>
 
             {/* Interactive contact card */}
-            <div className="relative group p-8 rounded-[2rem] border border-black/5 dark:border-white/5 bg-zinc-50 dark:bg-gradient-to-br dark:from-white/5 dark:to-transparent overflow-hidden shadow-sm">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(59,130,246,0.1),transparent_70%)]" />
-              <p className="relative z-10 text-zinc-600 dark:text-gray-400 leading-relaxed font-medium">
-                {t("quote")}
-              </p>
+            <div className="relative group p-10 rounded-[2.5rem] border border-black/5 dark:border-white/10 bg-white/50 dark:bg-zinc-900/50 backdrop-blur-xl overflow-hidden shadow-2xl dark:shadow-none transition-transform hover:scale-[1.01] duration-500">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-blue-500/20 transition-colors" />
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-purple-500/20 transition-colors" />
+
+              <div className="relative z-10 flex flex-col items-center text-center">
+                <Quote className="w-10 h-10 text-blue-500/20 mb-6 transform -rotate-12 group-hover:rotate-0 transition-transform duration-500" />
+                <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed font-bold italic text-lg md:text-xl">
+                  {t("quote")}
+                </p>
+              </div>
             </div>
           </motion.div>
 
@@ -135,7 +154,7 @@ export function Contact() {
           >
             <form
               id="contact-form"
-              action={handleSubmit}
+              onSubmit={handleSubmit}
               className="space-y-8 rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden bg-white dark:bg-zinc-900/50 backdrop-blur-2xl border border-black/5 dark:border-white/10 shadow-2xl dark:shadow-none"
             >
               <div className="absolute top-0 right-0 h-64 w-64 bg-blue-500/10 blur-[100px] -mr-32 -mt-32 pointer-events-none" />
@@ -208,10 +227,13 @@ export function Contact() {
 
               <Button
                 disabled={isPending}
-                className="w-full h-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white border-0 font-bold text-lg rounded-2xl shadow-[0_0_25px_rgba(37,99,235,0.25)] hover:scale-[1.02] active:scale-95 transition-all disabled:opacity-50"
+                className={`w-full h-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white border-0 font-bold text-lg rounded-2xl shadow-[0_0_25px_rgba(37,99,235,0.25)] transition-all disabled:opacity-70 disabled:cursor-not-allowed ${!isPending ? "hover:scale-[1.02] active:scale-95" : ""}`}
               >
                 {isPending ? (
-                  t("status.pending")
+                  <span className="flex items-center justify-center">
+                    <Loader2 className="mr-3 h-5 w-5 animate-spin" />{" "}
+                    {t("status.pending")}
+                  </span>
                 ) : (
                   <span className="flex items-center justify-center">
                     <Send className="mr-3 h-5 w-5" /> {t("status.send")}

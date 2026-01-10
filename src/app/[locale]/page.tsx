@@ -8,6 +8,7 @@ import { Contact } from "@/components/sections/Contact";
 import { BlogTeaser } from "@/components/sections/BlogTeaser";
 import { Services } from "@/components/sections/Services";
 import { SocialDonation } from "@/components/sections/SocialDonation";
+import { img } from "@/components/image";
 
 // Static data for projects
 const staticProjects = [
@@ -16,8 +17,7 @@ const staticProjects = [
     title: "SIVEA System",
     description:
       "Sistema de Información para las operaciones de vuelo y estadisticas aeroportuarias en el aeropuerto Sst. Néstor Arias.",
-    image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=2070&auto=format&fit=crop",
+    image: img.loginSivea,
     tags: [
       { tag: "Html" },
       { tag: "Css" },
@@ -25,8 +25,8 @@ const staticProjects = [
       { tag: "php" },
       { tag: "Mysql" },
     ],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/DaniDev-19/SIVEA-System",
+    demo: "#",
     docs: "/projects/SIVEA",
   },
   {
@@ -38,7 +38,7 @@ const staticProjects = [
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
     tags: [{ tag: "React" }, { tag: "Node.js" }, { tag: "MongoDB" }],
     github: "https://github.com",
-    demo: "https://demo.com",
+    demo: "#",
   },
   {
     id: "3",
@@ -49,7 +49,7 @@ const staticProjects = [
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop",
     tags: [{ tag: "OpenAI" }, { tag: "Python" }, { tag: "FastAPI" }],
     github: "https://github.com",
-    demo: "https://demo.com",
+    demo: "#",
   },
 ];
 

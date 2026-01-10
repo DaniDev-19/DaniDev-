@@ -20,16 +20,16 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
-// Define interface for Project based on Payload collection
+// Define interface for Project
 export interface Project {
   id: string;
   title: string;
   description: string;
-  image: any; // payload media object
+  image: any; // Image source or object
   tags?: { tag: string; id?: string }[];
   github?: string;
   demo?: string;
-  docs?: string; // Link to project documentation
+  docs?: string;
 }
 
 interface ProjectsProps {
@@ -39,42 +39,53 @@ interface ProjectsProps {
 export function Projects({ projects = [] }: ProjectsProps) {
   const t = useTranslations("Projects");
 
-  // Fallback projects if CMS is empty
-  const displayProjects =
-    projects.length > 0
-      ? projects
-      : [
-          {
-            id: "fallback-1",
-            title: t("fallbackTitle"),
-            description: t("fallbackDesc"),
-            image:
-              "https://images.unsplash.com/photo-1551288049-bbbda5366391?q=80&w=2070&auto=format&fit=crop",
-            tags: [{ tag: "Payload" }, { tag: "Next.js" }],
-            github: "#",
-            demo: "#",
-          },
-          {
-            id: "fallback-2",
-            title: t("fallbackTitle"),
-            description: t("fallbackDesc"),
-            image:
-              "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-            tags: [{ tag: "React" }, { tag: "Bun" }],
-            github: "#",
-            demo: "#",
-          },
-        ];
+  const displayProjects = projects;
 
   // Helper to get image URL
   const getImageUrl = (image: any) => {
+    if (!image) return "";
     if (typeof image === "string") return image;
-    return image?.sizes?.card?.url || image?.url || "";
+    // Si es una importación de Next.js, tiene la propiedad src o es el objeto mismo
+    return image.src || image?.sizes?.card?.url || image?.url || image;
   };
 
   const getAlt = (image: any) => {
     if (typeof image === "string") return t("imageAlt");
     return image?.alt || t("imageAlt");
+  };
+
+  const getTagStyles = (tag: string) => {
+    const name = tag.toLowerCase();
+    if (
+      ["react", "next.js", "nextjs", "typescript", "css", "tailwind"].includes(
+        name
+      )
+    ) {
+      return "bg-blue-600/90 dark:bg-blue-500/20 border-blue-400/30 text-white dark:text-blue-500";
+    }
+    if (["postmang", "javascript", "js"].includes(name)) {
+      return "bg-yellow-600/90 dark:bg-yellow-500/20 border-yellow-400/30 text-white dark:text-yellow-500";
+    }
+    if (
+      [
+        "php",
+        "node.js",
+        "nodejs",
+        "python",
+        "fastapi",
+        "bun",
+        "express",
+      ].includes(name)
+    ) {
+      return "bg-purple-600/90 dark:bg-purple-500/20 border-purple-400/30 text-white dark:text-purple-500";
+    }
+    if (["mysql", "postgresql", "mongodb", "sqlite", "redis"].includes(name)) {
+      return "bg-emerald-600/90 dark:bg-emerald-500/20 border-emerald-400/30 text-white dark:text-emerald-500";
+    }
+    if (["openai", "ai", "html"].includes(name)) {
+      return "bg-pink-600/90 dark:bg-pink-500/20 border-pink-400/30 text-white dark:text-pink-500";
+    }
+    return "bg-zinc-800/90 dark:bg-zinc-800/50 border-white/10 text-white";
   };
 
   return (
@@ -146,10 +157,10 @@ export function Projects({ projects = [] }: ProjectsProps) {
 
                       {/* Top badges */}
                       <div className="absolute top-6 left-6 flex flex-wrap gap-2">
-                        {project.tags?.slice(0, 2).map((tagItem, idx) => (
+                        {project.tags?.slice(0, 4).map((tagItem, idx) => (
                           <Badge
                             key={idx}
-                            className="bg-black/80 dark:bg-white/10 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1"
+                            className={`backdrop-blur-md border shadow-lg text-[10px] font-black uppercase tracking-widest px-3 py-1.5 ${getTagStyles(tagItem.tag)}`}
                           >
                             {tagItem.tag}
                           </Badge>
@@ -185,7 +196,7 @@ export function Projects({ projects = [] }: ProjectsProps) {
                             </a>
                           </Button>
                         )}
-                        {project.demo && (
+                        {project.demo && project.demo !== "#" && (
                           <Button
                             size="sm"
                             className="flex-1 h-9 bg-gradient-to-r from-blue-600 to-purple-600 hover:scale-105 transition-all rounded-xl text-xs md:text-sm font-bold shadow-lg shadow-blue-600/20 text-white border-0"

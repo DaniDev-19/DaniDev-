@@ -1,139 +1,139 @@
 {
-    "Navbar": {
-        "about": "About",
-        "projects": "Projects",
-        "blog": "Blog",
-        "skills": "Skills",
-        "journey": "Journey",
-        "contact": "Contact",
-        "resume": "Resume"
+  "Navbar": {
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "skills": "Skills",
+    "journey": "Journey",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "Hero": {
+    "badge": "Available for Work",
+    "title": "Crafting <span class=\"text-gradient\">Digital</span> <br /> Experiences",
+    "description": "Full Stack Developer specializing in building high-performance, beautiful web applications with modern technologies.",
+    "cta_work": "View My Work",
+    "cta_contact": "Enquire Now"
+  },
+  "Stats": {
+    "commits": "Total Commits",
+    "repos": "Total Repos",
+    "stars": "Github Stars",
+    "blog": "Active Blog",
+    "posts": "{count} Posts"
+  },
+  "About": {
+    "title": "Passion for <span class=\"text-gradient\">Building</span> better web.",
+    "description": "I'm a developer who loves blending technical challenges with creative design. My goal is to create digital products that are not only functional but also a delight to use.",
+    "stats": {
+      "experience": "Experience",
+      "projects": "Projects",
+      "coffee": "Coffee",
+      "ui": "UI Focus",
+      "exp_value": "4+ Years",
+      "projects_value": "30+",
+      "coffee_value": "Infinite",
+      "ui_value": "Pixel Perfect"
     },
-    "Hero": {
-        "badge": "Available for Work",
-        "title": "Crafting <span class=\"text-gradient\">Digital</span> <br /> Experiences",
-        "description": "Full Stack Developer specializing in building high-performance, beautiful web applications with Next.js and Payload CMS.",
-        "cta_work": "View My Work",
-        "cta_contact": "Enquire Now"
-    },
-    "Stats": {
-        "commits": "Total Commits",
-        "repos": "Total Repos",
-        "stars": "Github Stars",
-        "blog": "Active Blog",
-        "posts": "{count} Posts"
-    },
-    "About": {
-        "title": "Passion for <span class=\"text-gradient\">Building</span> better web.",
-        "description": "I'm a developer who loves blending technical challenges with creative design. My goal is to create digital products that are not only functional but also a delight to use.",
-        "stats": {
-            "experience": "Experience",
-            "projects": "Projects",
-            "coffee": "Coffee",
-            "ui": "UI Focus",
-            "exp_value": "4+ Years",
-            "projects_value": "30+",
-            "coffee_value": "Infinite",
-            "ui_value": "Pixel Perfect"
-        },
-        "philosophy": {
-            "title": "My Philosophy",
-            "p1": "I believe the best software is built at the intersection of robust engineering and thoughtful user experience. Every line of code I write is an opportunity to solve a problem effectively and elegantly.",
-            "p2": "When I'm not coding, I'm usually exploring new design trends, contributing to open-source projects, or learning about the latest advancements in web performance and security.",
-            "location_label": "Location",
-            "location_value": "Remote / Global",
-            "based_label": "Based In",
-            "based_value": "The Digital World"
-        }
-    },
-    "Projects": {
-        "title": "Selected <span class=\"text-gradient\">Projects</span>",
-        "viewCode": "Code",
-        "viewDemo": "View Demo",
-        "imageAlt": "Project Image",
-        "fallbackTitle": "Project Loading...",
-        "fallbackDesc": "Once you add projects in Payload CMS, they will appear here with your custom images and tags."
-    },
-    "Skills": {
-        "title": "Skills & Technologies",
-        "categories": {
-            "frontend": "Frontend",
-            "backend": "Backend",
-            "frameworks": "Frameworks",
-            "database": "Databases",
-            "orm": "ORMs",
-            "devops": "DevOps",
-            "tools": "Tools"
-        }
-    },
-    "Contact": {
-        "title": "Get In <span class=\"text-gradient\">Touch</span>",
-        "labels": {
-            "name": "Full Name",
-            "email": "Email Address",
-            "subject": "Subject",
-            "message": "Your Message"
-        },
-        "placeholders": {
-            "name": "John Doe",
-            "email": "john@example.com",
-            "subject": "Inquiry about project",
-            "message": "Hello, I'd like to talk about..."
-        },
-        "info": {
-            "email": "Email Me",
-            "location": "Location",
-            "remote": "Open to Remote",
-            "call": "Call Me"
-        },
-        "status": {
-            "pending": "Sending...",
-            "send": "Send Message",
-            "success": "Successfully sent!",
-            "error": "Something went wrong. Please try again later."
-        },
-        "quote": "\"I'm always open to new opportunities and interesting projects. Let's create something amazing together!\""
-    },
-    "Blog": {
-        "title": "Technical <span class=\"text-gradient\">Blog</span>",
-        "description": "Insightful articles about modern web development, architecture, and design patterns.",
-        "back": "Back to blog",
-        "readMore": "Read more"
-    },
-    "Journey": {
-        "title": "My <span class=\"text-gradient\">Journey</span>",
-        "events": [
-            {
-                "title": "Senior Full-Stack Engineer",
-                "company": "TechNexus Solutions",
-                "description": "Leading development of scalable cloud architectures and mentoring junior developers in React and Node.js best practices."
-            },
-            {
-                "title": "Web Developer",
-                "company": "Creative Digital Agency",
-                "description": "Built high-performance marketing sites and complex e-commerce platforms using Next.js and headless CMS solutions."
-            },
-            {
-                "title": "Freelance UI Developer",
-                "company": "Remote",
-                "description": "Worked directly with startups to design and implement intuitive user interfaces and brand identities."
-            },
-            {
-                "title": "B.S. in Computer Science",
-                "company": "Global Tech University",
-                "description": "Specialized in Software Engineering and Artificial Intelligence. Graduated with honors."
-            }
-        ]
-    },
-    "Errors": {
-        "404": {
-            "title": "404",
-            "message": "Oops! The page you're looking for doesn't exist.",
-            "button": "Back to Home"
-        },
-        "500": {
-            "title": "Something went wrong",
-            "message": "An unexpected error occurred on the server.",
-            "button": "Try Again"
-        }
+    "philosophy": {
+      "title": "My Philosophy",
+      "p1": "I believe the best software is built at the intersection of robust engineering and thoughtful user experience. Every line of code I write is an opportunity to solve a problem effectively and elegantly.",
+      "p2": "When I'm not coding, I'm usually exploring new design trends, contributing to open-source projects, or learning about the latest advancements in web performance and security.",
+      "location_label": "Location",
+      "location_value": "Remote / Global",
+      "based_label": "Based In",
+      "based_value": "The Digital World"
     }
+  },
+  "Projects": {
+    "title": "Selected <span class=\"text-gradient\">Projects</span>",
+    "viewCode": "Code",
+    "viewDemo": "View Demo",
+    "imageAlt": "Project Image",
+    "fallbackTitle": "Project Loading...",
+    "fallbackDesc": "New projects will appear here soon with custom images and tags."
+  },
+  "Skills": {
+    "title": "Skills & Technologies",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "frameworks": "Frameworks",
+      "database": "Databases",
+      "orm": "ORMs",
+      "devops": "DevOps",
+      "tools": "Tools"
+    }
+  },
+  "Contact": {
+    "title": "Get In <span class=\"text-gradient\">Touch</span>",
+    "labels": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Your Message"
+    },
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "subject": "Inquiry about project",
+      "message": "Hello, I'd like to talk about..."
+    },
+    "info": {
+      "email": "Email Me",
+      "location": "Location",
+      "remote": "Open to Remote",
+      "call": "Call Me"
+    },
+    "status": {
+      "pending": "Sending...",
+      "send": "Send Message",
+      "success": "Successfully sent!",
+      "error": "Something went wrong. Please try again later."
+    },
+    "quote": "\"I'm always open to new opportunities and interesting projects. Let's create something amazing together!\""
+  },
+  "Blog": {
+    "title": "Technical <span class=\"text-gradient\">Blog</span>",
+    "description": "Insightful articles about modern web development, architecture, and design patterns.",
+    "back": "Back to blog",
+    "readMore": "Read more"
+  },
+  "Journey": {
+    "title": "My <span class=\"text-gradient\">Journey</span>",
+    "events": [
+      {
+        "title": "Senior Full-Stack Engineer",
+        "company": "TechNexus Solutions",
+        "description": "Leading development of scalable cloud architectures and mentoring junior developers in React and Node.js best practices."
+      },
+      {
+        "title": "Web Developer",
+        "company": "Creative Digital Agency",
+        "description": "Built high-performance marketing sites and complex e-commerce platforms using Next.js and headless CMS solutions."
+      },
+      {
+        "title": "Freelance UI Developer",
+        "company": "Remote",
+        "description": "Worked directly with startups to design and implement intuitive user interfaces and brand identities."
+      },
+      {
+        "title": "B.S. in Computer Science",
+        "company": "Global Tech University",
+        "description": "Specialized in Software Engineering and Artificial Intelligence. Graduated with honors."
+      }
+    ]
+  },
+  "Errors": {
+    "404": {
+      "title": "404",
+      "message": "Oops! The page you're looking for doesn't exist.",
+      "button": "Back to Home"
+    },
+    "500": {
+      "title": "Something went wrong",
+      "message": "An unexpected error occurred on the server.",
+      "button": "Try Again"
+    }
+  }
 }

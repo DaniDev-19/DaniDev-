@@ -33,7 +33,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="text-5xl md:text-7xl lg:text-8xl font-black text-foreground mb-8 tracking-tighter leading-[0.9]"
+              className="text-5xl md:text-7xl lg:text-8xl font-black text-foreground mb-8 tracking-tight leading-[1.1]"
               dangerouslySetInnerHTML={{ __html: t.raw("title") }}
             />
 
@@ -94,7 +94,7 @@ export function Hero() {
                   />
 
                   {/* Overlay for text to ensure readability if needed */}
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-8 pt-20 flex flex-col items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-16 pt-20 flex flex-col items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <div className="text-xs md:text-base font-bold text-white uppercase tracking-[0.2em] mb-2">
                       Software Engineer
                     </div>

@@ -13,8 +13,6 @@ export function LocaleSwitcher() {
   const params = useParams();
 
   const handleLocaleChange = (newLocale: string) => {
-    // Para cambios de idioma simples, next-intl recomienda usar router.replace solo con el pathname
-    // y el nuevo locale en las opciones.
     router.replace(
       // @ts-ignore
       pathname,
