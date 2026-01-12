@@ -19,39 +19,24 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// Interface for the Payload Doc
-export interface SkillDoc {
+interface SkillData {
   id: string;
   name: string;
-  category:
-    | "frontend"
-    | "backend"
-    | "frameworks"
-    | "database"
-    | "orm"
-    | "devops"
-    | "tools";
-  icon?: string;
+  category: string;
 }
 
 interface SkillsProps {
-  skills: SkillDoc[];
+  skills: SkillData[];
 }
 
 export function Skills({ skills = [] }: SkillsProps) {
   const t = useTranslations("Skills");
 
-  interface Skill {
-    id: string;
-    name: string;
-    category: string;
-  }
-
   interface SkillCategory {
     id: string;
     name: string;
     icon: React.ReactNode;
-    skills: Skill[];
+    skills: SkillData[];
   }
 
   const categorizedSkills: Record<string, SkillCategory> = {

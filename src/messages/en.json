@@ -6,7 +6,13 @@
     "skills": "Skills",
     "journey": "Journey",
     "contact": "Contact",
-    "resume": "Resume"
+    "resume": "Resume",
+    "explore_button": "Explore",
+    "services_menu": "Services",
+    "learning": "Learning",
+    "services_desc": "Web development and digital solutions.",
+    "learning_desc": "Mentorship and educational resources.",
+    "blog_desc": "Technical articles and tutorials."
   },
   "Hero": {
     "badge": "Available for Work",
@@ -135,5 +141,11 @@
       "message": "An unexpected error occurred on the server.",
       "button": "Try Again"
     }
+  },
+  "Footer": {
+    "connect": "Let's Connect",
+    "support": "Support my work",
+    "donate_button": "Donate with Zinli",
+    "donate_desc": "Contributions help create more free educational content."
   }
 }

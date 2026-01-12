@@ -7,9 +7,12 @@ import equipoSivea from "../../public/images/optimized/equipo y grente.webp";
 import impleSivea from "../../public/images/optimized/instalacion.webp";
 import impleSivea2 from "../../public/images/optimized/implementacion 2.webp";
 import loginSivea from "../../public/images/optimized/Login Sivea.webp";
-
+import logo from "../../public/images/optimized/logo.webp";
+import DaniDev2 from "../../public/images/optimized/DaniDev2.webp";
 export const img = {
   DaniDev,
+  DaniDev2,
+  logo,
   merSivea,
   mlrSivea,
   capasitaSivea,

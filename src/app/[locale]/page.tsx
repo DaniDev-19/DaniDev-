@@ -5,8 +5,6 @@ import { Projects } from "@/components/sections/Projects";
 import { Skills } from "@/components/sections/Skills";
 import { Journey } from "@/components/sections/Journey";
 import { Contact } from "@/components/sections/Contact";
-import { BlogTeaser } from "@/components/sections/BlogTeaser";
-import { Services } from "@/components/sections/Services";
 import { SocialDonation } from "@/components/sections/SocialDonation";
 import { img } from "@/components/image";
 
@@ -65,11 +63,12 @@ const staticSkills: any[] = [
   { id: "s6", name: "Python", category: "backend" },
   // Frameworks
   { id: "s7", name: "React", category: "frameworks" },
-  { id: "s8", name: "NextJS", category: "frameworks" },
-  { id: "s9", name: "NodeJS", category: "frameworks" },
-  { id: "s10", name: "Laravel", category: "frameworks" },
-  { id: "s11", name: "FastAPI", category: "frameworks" },
-  { id: "s12", name: "Express", category: "frameworks" },
+  { id: "s8", name: "Tailwind", category: "frameworks" },
+  { id: "s9", name: "NextJS", category: "frameworks" },
+  { id: "s10", name: "NodeJS", category: "frameworks" },
+  { id: "s11", name: "Laravel", category: "frameworks" },
+  { id: "s12", name: "FastAPI", category: "frameworks" },
+  { id: "s13", name: "Express", category: "frameworks" },
   // Database
   { id: "s13", name: "PostgreSQL", category: "database" },
   { id: "s14", name: "MySQL", category: "database" },
@@ -96,34 +95,6 @@ const staticSkills: any[] = [
   { id: "s32", name: "ESLint", category: "tools" },
 ];
 
-// Static data for blog posts
-const staticPosts = [
-  {
-    id: "1",
-    title: "Building Modern Web Applications with Next.js 15",
-    excerpt:
-      "Explore the latest features in Next.js 15 and how they can improve your development workflow.",
-    slug: "nextjs-15-features",
-    publishedDate: "2024-12-15",
-    mainImage: {
-      url: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop",
-    },
-    tags: [{ tag: "Next.js" }, { tag: "React" }],
-  },
-  {
-    id: "2",
-    title: "The Future of Web Development",
-    excerpt:
-      "Discover emerging trends and technologies that are shaping the future of web development.",
-    slug: "future-of-web-dev",
-    publishedDate: "2024-12-10",
-    mainImage: {
-      url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2070&auto=format&fit=crop",
-    },
-    tags: [{ tag: "Web Dev" }, { tag: "Trends" }],
-  },
-];
-
 export default async function Home({
   params,
 }: {
@@ -138,9 +109,7 @@ export default async function Home({
       <About />
       <Skills skills={staticSkills} />
       <Projects projects={staticProjects} />
-      <Services />
       <Journey />
-      <BlogTeaser posts={staticPosts} />
       <Contact />
       <SocialDonation />
     </div>

@@ -6,7 +6,13 @@
     "skills": "Habilidades",
     "journey": "Trayectoria",
     "contact": "Contacto",
-    "resume": "Currículum"
+    "resume": "Currículum",
+    "explore_button": "Explorar",
+    "services_menu": "Servicios",
+    "learning": "Aprendizaje",
+    "services_desc": "Desarrollo web y soluciones digitales.",
+    "learning_desc": "Mentorías y recursos educativos.",
+    "blog_desc": "Artículos técnicos y tutoriales."
   },
   "Hero": {
     "badge": "Disponible para trabajar",
@@ -135,5 +141,11 @@
       "message": "Ha ocurrido un error inesperado en el servidor.",
       "button": "Reintentar"
     }
+  },
+  "Footer": {
+    "connect": "Conectemos",
+    "support": "Apoya mi trabajo",
+    "donate_button": "Donar con Zinli",
+    "donate_desc": "Los aportes ayudan a crear más contenido educativo gratuito."
   }
 }

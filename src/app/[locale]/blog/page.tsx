@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight, Calendar, ArrowLeft } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 // Static blog posts data
@@ -52,8 +52,16 @@ export default async function BlogPage({
   const t = await getTranslations("Blog");
 
   return (
-    <div className="container mx-auto py-24 px-4 md:px-6 bg-background transition-colors duration-300">
-      <header className="mb-16">
+    <div className="container mx-auto py-24 px-4 md:px-6 bg-background transition-colors duration-300 relative">
+      <Link
+        href="/"
+        className="absolute top-8 left-4 md:left-8 flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+      >
+        <ArrowLeft size={20} />
+        <span>Volver al Inicio</span>
+      </Link>
+
+      <header className="mb-16 pt-8">
         <h1 className="text-5xl md:text-7xl font-extrabold text-foreground tracking-tighter mb-6">
           Technical <span className="text-gradient">Blog</span>
         </h1>
