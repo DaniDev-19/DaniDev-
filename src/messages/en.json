@@ -146,6 +146,14 @@
     "connect": "Let's Connect",
     "support": "Support my work",
     "donate_button": "Donate with Zinli",
-    "donate_desc": "Contributions help create more free educational content."
+    "donate_desc": "Contributions help create more free educational content.",
+    "zinli_modal": {
+      "title": "Donate with Zinli",
+      "description": "Your support helps me keep creating educational content and open source projects.",
+      "account_label": "Zinli Account",
+      "copy_button": "Copy Email",
+      "copied": "Copied!",
+      "close": "Close"
+    }
   }
 }

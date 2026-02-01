@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 // Swiper styles
 import "swiper/css";
@@ -124,15 +124,10 @@ export function Skills({ skills = [] }: SkillsProps) {
 
         <div className="skills-carousel-container relative mt-8">
           <Swiper
-            modules={[Autoplay, Pagination, Navigation]}
+            modules={[Pagination, Navigation]}
             spaceBetween={25}
             slidesPerView={1}
             navigation={true}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
             pagination={{
               clickable: true,
               dynamicBullets: true,

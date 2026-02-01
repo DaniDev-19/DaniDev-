@@ -7,28 +7,30 @@ import { useTranslations } from "next-intl";
 export function Journey() {
   const t = useTranslations("Journey");
 
-  // Get events from translations
   const events = t.raw("events") as Array<{
     title: string;
     company: string;
     description: string;
   }>;
 
-  // Years and colors are still static (or could be moved to JSON if needed)
   const eventMetadata = [
     {
-      year: "2024 - Present",
+      year: "2026 - Present",
       icon: <Briefcase size={20} />,
       color: "bg-blue-500",
     },
     {
-      year: "2022 - 2024",
+      year: "2025 - 2026",
       icon: <Briefcase size={20} />,
       color: "bg-purple-500",
     },
-    { year: "2020 - 2022", icon: <Star size={20} />, color: "bg-pink-500" },
     {
-      year: "2016 - 2020",
+      year: "2024 - 2025",
+      icon: <Star size={20} />,
+      color: "bg-pink-500",
+    },
+    {
+      year: "2023 - 2024",
       icon: <GraduationCap size={20} />,
       color: "bg-green-500",
     },
@@ -54,7 +56,6 @@ export function Journey() {
         </div>
 
         <div className="relative mx-auto max-w-4xl">
-          {/* Vertical Line */}
           <div className="absolute left-4 top-0 h-full w-[2px] bg-gradient-to-b from-blue-600 via-purple-600 to-transparent md:left-1/2 md:-ml-[1px]" />
 
           <div className="space-y-16">
@@ -71,14 +72,12 @@ export function Journey() {
                     index % 2 === 0 ? "md:flex-row-reverse" : ""
                   }`}
                 >
-                  {/* Connection Point */}
                   <div className="absolute left-4 top-2 flex h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full bg-white dark:bg-zinc-900 border-2 border-black/10 dark:border-white/10 md:left-1/2 z-20 shadow-sm">
                     <div
                       className={`h-2.5 w-2.5 rounded-full ${meta.color} shadow-[0_0_10px_currentColor] animate-pulse`}
                     />
                   </div>
 
-                  {/* Content */}
                   <div
                     className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? "md:pl-16" : "md:pr-16"}`}
                   >

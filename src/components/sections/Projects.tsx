@@ -1,12 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Autoplay,
-  EffectCoverflow,
-} from "swiper/modules";
+import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -125,8 +120,7 @@ export function Projects({ projects = [] }: ProjectsProps) {
               slideShadows: false,
             }}
             pagination={{ clickable: true, dynamicBullets: true }}
-            modules={[EffectCoverflow, Pagination, Autoplay]}
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            modules={[EffectCoverflow, Pagination]}
             className="pb-20 !overflow-visible"
             breakpoints={{
               320: { slidesPerView: 1, spaceBetween: 20 },

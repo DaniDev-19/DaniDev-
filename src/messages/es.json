@@ -109,24 +109,24 @@
     "title": "Mi <span class=\"text-gradient\">Trayectoria</span>",
     "events": [
       {
-        "title": "Ingeniero Full-Stack Senior",
-        "company": "TechNexus Solutions",
-        "description": "Liderando el desarrollo de arquitecturas en la nube escalables y mentorizando desarrolladores junior en mejores prácticas de React y Node.js."
+        "title": "Ingeniero de Sistemas y Líder de Desarrollo (OTIC)",
+        "company": "Planta de autobuses yutong venezuela",
+        "description": "Responsable del desarrollo de software institucional, destacando la creación del sistema 'Cuidarte Yutong' para la gestión médica, auditoría e inventarios. Administro sistemas ERP (Planificación de Recursos Empresariales) tales como (SIGESP v2/SIGESPERP v2), gestiono servidores, infraestructura de redes y sistemas de videovigilancia, además de capacitar al personal en herramientas tecnológicas corporativas."
       },
       {
-        "title": "Desarrollador Web",
-        "company": "Agencia Digital Creativa",
-        "description": "Construcción de sitios de marketing de alto rendimiento y plataformas de comercio electrónico complejas utilizando Next.js y soluciones de CMS sin cabeza."
+        "title": "Desarrollador Full Stack (Líder Técnico)",
+        "company": "Instituto nacional de salud agrícola integral (Insai)",
+        "description": "Lideré el desarrollo integral del software institucional SICIC-INSAI (V1), responsabilizándome de la arquitectura, lógica de negocio y despliegue del código. Conjunto a un equipo de 4 personas, supervisando fases de documentación, modelado de procesos y aseguramiento de calidad"
       },
       {
-        "title": "Desarrollador UI Freelance",
-        "company": "Remoto",
-        "description": "Trabajo directo con startups para diseñar e implementar interfaces de usuario intuitivas e identidades de marca."
+        "title": "Desarrollador de Software y Facilitador Tecnológico",
+        "company": "Consejo comunal Urb.San josé",
+        "description": "Forme parte en el desarrollo de un sistema de censos automatizados para la comunidad. Responsable de la capacitación técnica en desarrollo web y automatización de procesos para los miembros del consejo comunal."
       },
       {
-        "title": "Grado en Ciencias de la Computación",
-        "company": "Universidad Tecnológica Global",
-        "description": "Especializado en Ingeniería de Software e Inteligencia Artificial. Graduado con honores."
+        "title": "Ingeniero de Soporte y Desarrollo de Software",
+        "company": "Bolivariana de Aeropuertos (Baer)",
+        "description": "Gestión integral de la infraestructura tecnológica y redes de la institución. Diseño y desarrollo del sistema web SIVEA, automatizando los procesos de las operaciones de vuelo de la institución."
       }
     ]
   },
@@ -146,6 +146,14 @@
     "connect": "Conectemos",
     "support": "Apoya mi trabajo",
     "donate_button": "Donar con Zinli",
-    "donate_desc": "Los aportes ayudan a crear más contenido educativo gratuito."
+    "donate_desc": "Los aportes ayudan a crear más contenido educativo gratuito.",
+    "zinli_modal": {
+      "title": "Donar con Zinli",
+      "description": "Tu apoyo me ayuda a seguir creando contenido educativo y proyectos de código abierto.",
+      "account_label": "Cuenta Zinli",
+      "copy_button": "Copiar Correo",
+      "copied": "¡Copiado!",
+      "close": "Cerrar"
+    }
   }
 }
